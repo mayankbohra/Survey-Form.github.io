@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <h1 id="title">Programmers Voice!</h1>
+    <p id="description">We love to know about which technology and tools software engineers are using world wide! Each and every Developers opinions are very precious to us!</p>
+
+    <form id="survey-form">
+
+        <fieldset>
+            <label id="name-label">Name: <input type="text" id="name" placeholder="Enter your name" required></label>
+            <label id="email-label">Email: <input type="email" id="email" placeholder="Enter your email" required></label>
+            <label id="number-label">Age: <input type="number" id="number" min=13 max=120 placeholder="Enter your age" required></label>
+        </fieldset>
+
+        <fieldset>
+            <label>Programming Language you are expert at: </label>
+            <select id="dropdown">
+                <option value="">Programming Language</option>
+                <option value="1">C</option>
+                <option value="2">C#</option>
+                <option value="3">C++</option>
+                <option value="4">Java</option>
+                <option value="5">Python</option>
+                <option value="6">Other</option>
+            </select>
+        </fieldset>
+
+        <fieldset>
+            <label>Employment Status: </label>
+            <label><input type="radio" class="radio-inline" name="status" value="employed" checked> Full-Time Job Holder (Employed)</label>
+            <label><input type="radio" class="radio-inline" name="status" value="freelancer" > Part-Time Job Holder (Freelancer)</label>
+            <label><input type="radio" class="radio-inline" name="status" value="applier" > Looking for a Job (Applier)</label>
+            <label><input type="radio" class="radio-inline" name="status" value="unemployed" > I am a student (Unemployed)</label>
+        </fieldset>
+
+        <fieldset>
+            <label>Operating System Experience</label>
+            <label><input type="checkbox" class="check" name="os1" value="windows" checked>I am experienced with Windows-OS</label>
+            <label><input type="checkbox" class="check" name="os2" value="linux">I am experienced with Linux-OS</label>
+            <label><input type="checkbox" class="check" name="os3" value="mac">I am experienced with Mac-OS</label>
+        </fieldset>
+
+        <fieldset>
+            <label>Do you have any suggestions about this survey?
+                <textarea name="comment" rows="5" cols="50" placeholder="Please feel free to write a review..."></textarea>
+            </label>
+        </fieldset>
+
+        <input type="submit" id="submit" value="Submit">
+
+    </form>
+
+</body>
+
+</html>
